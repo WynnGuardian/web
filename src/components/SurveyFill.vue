@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { Ref, ref } from 'vue'
 import { useRoute } from 'vue-router';
-import { Criteria } from '../models/Criteria';
-import { Survey } from '../models/Survey';
-import * as api from '../api/survey'
+import { Criteria } from '../models/Criteria.ts';
+import { Survey } from '../models/Survey.ts';
+import * as api from '../api/survey.ts'
 
 const route = useRoute()
 const survey: Ref<Survey | undefined> = ref(undefined)
